@@ -44,9 +44,9 @@ Part 1: Create a form with only JavaScript`)
            Do the same steps, appending a label/input for Email, and a submit button to your form.
  * ↓ YOUR CODE HERE ↓ */
    let myForm = document.createElement('form');  // P1 Steps 2,3
-   let myLabel = document.createElement('form'); // P1 Step 4
+   let myLabel = document.createElement('label'); // P1 Step 4
    let myInput = document.createElement('input'); // P1 Step 4
-   let myEmailLabel = document.createElement('form'); // P1 Step 7b
+   let myEmailLabel = document.createElement('label'); // P1 Step 7b
    let myEmail = document.createElement('input');     // P1 Step 7b
    let button = document.createElement('button');     // P1 Step 7c
    let lineBreak = document.createElement('br');
@@ -84,11 +84,11 @@ Part 2: Styling our form with only JavaScript`)
  *  Step 3: Give your form a display of flex, a flex-direction of column, and a max-width of 250px
  *
  * ↓ YOUR CODE HERE ↓ */
-      myForm.style.background = 'aquamarine';  // P2 Step 1
+      myForm.style.backgroundColor = 'aquamarine';  // P2 Step 1
       myForm.style.color = 'blue';  // P2 Step 2
       myForm.style.display = 'flex'; // P2 Step 3a
       myForm.style.flexDirection = 'column'; // P2 Step 3b
-      myForm.style.maxwidth = '250px';
+      myForm.style.maxWidth = '250px';
 
 
 //Question: Do you prefer styling with JavaScript or CSS?
@@ -129,7 +129,7 @@ Part 3: Creating a table with only JavaScript`)
    myTable.style.border = '3px solid blue';
    myTable.style.display = 'flex';
    myTable.style.flexDirection = 'column';
-   myTable.style.maxwidth = '50px';
+   myTable.style.maxWidth = '200px';
 
 
    console.log(myTable)   // P3 step 1
@@ -159,15 +159,15 @@ Part 4: Changing our background on click`)
 
    const btn = document.getElementById("myButton");  //P4 Step 3
 
-   btn.addEventListener("mousemove", () => {
-      document.body.style.background = `rgb(${Math.random() * 0}, ${Math.random() * 125} ,${Math.random() * 255})`;
+   btn.addEventListener("mousedown", () => {
+      document.body.style.background = `rgb(${Math.random() * 255}, ${Math.random() * 255} ,${Math.random() * 255})`;
    })
 
 
 
 //Question: What other event listeners are there?
 //             Try them out by replacing 'click' in your function above!
-//Answer: 
+//Answer: mouseover, mousemove, mouseout, mouseup, mousedown
 
 console.log(`-----------Finished------------`)
 
